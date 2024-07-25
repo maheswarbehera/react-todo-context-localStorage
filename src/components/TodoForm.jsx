@@ -8,9 +8,9 @@ function TodoForm() {
     
     const add = (e) => {
         e.preventDefault()
-        if(!todo) return
+        if(!todo) return alert('enter todo')
 
-        addTodo({todo, completed: false})
+        addTodo({todo, completed: false}) // optional completed: false
         setTodo('')
     }
     

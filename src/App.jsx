@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() =>{
     const todos = JSON.parse(localStorage.getItem('todos'))
-    console.log(todos.length);
+    // console.log(todos.length);
     if(todos && todos.length > 0 )
       setTodos(todos)
   }, [])
